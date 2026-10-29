@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shivam Pandey — AI Developer</title>
+  <meta name="description" content="Shivam Pandey — AI developer building agentic systems, RAG pipelines and voice AI. Based in Ahmedabad, India.">
+  <meta property="og:title" content="Shivam Pandey — AI Developer">
+  <meta property="og:description" content="Agentic AI, RAG and voice AI systems that ship.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2314b8a6'/><text x='16' y='22' font-family='monospace' font-size='16' font-weight='700' text-anchor='middle' fill='%230b0f14'>SP</text></svg>">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#top">shivam<span>.ai</span></a>
+    <nav>
+      <a href="#work">work</a>
+      <a href="#experience">experience</a>
+      <a href="#skills">skills</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="dot"></span> open to AI/ML roles · India &amp; worldwide</p>
+        <h1>I build AI agents<br>that <em>actually ship.</em></h1>
+        <p class="lead">I'm Shivam Pandey, an AI developer in Ahmedabad. I design multi-agent systems, RAG pipelines and real-time voice AI, and I care about the unglamorous parts: latency, cost per call and tests.</p>
+        <div class="cta">
+          <a class="btn primary" href="#work">See my work</a>
+          <a class="btn" href="mailto:rjshivam1905@gmail.com">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="trace" aria-label="Agent run illustration">
+        <div class="trace-head"><span></span><span></span><span></span><code>agent.run("hire shivam?")</code></div>
+        <ol class="trace-body" id="trace">
+          <li data-k="plan">supervisor → split task into 3 steps</li>
+          <li data-k="tool">retrieve(resume, k=5) · 212 ms</li>
+          <li data-k="tool">evaluate(agentic_ai, rag, voice_ai)</li>
+          <li data-k="check">all checks passed ✓</li>
+          <li data-k="out">verdict: <b>strong yes</b></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div><b>~1 yr</b><span>building GenAI in production</span></div>
+      <div><b>₹1.5/min</b><span>voice AI cost, down from ₹4.3–12.2</span></div>
+      <div><b>15s → 3.5s</b><span>first-audio latency cut</span></div>
+      <div><b>230</b><span>tests on one voice pipeline</span></div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="block">
+      <div class="block-head">
+        <p class="label">01 / work</p>
+        <h2>Selected projects</h2>
+      </div>
+      <div class="filters" role="tablist">
+        <button class="chip active" data-f="all">all</button>
+        <button class="chip" data-f="agents">multi-agent</button>
+        <button class="chip" data-f="rag">rag</button>
+        <button class="chip" data-f="voice">voice</button>
+        <button class="chip" data-f="tools">tools</button>
+      </div>
+
+      <div class="grid" id="projects">
+        <article class="card featured" data-tags="voice">
+          <div class="card-top"><span class="tag">NexusLink · 2026</span><span class="tag hl">featured</span></div>
+          <h3>Sanskarshaala AI Exam Proctor</h3>
+          <p>A Hindi voice AI that runs MCQ and descriptive school exams over a phone call. I moved it from a Gemini Live prototype to a Sarvam STT + state machine + Google Cloud TTS pipeline, with a dispatch queue and idempotent grading.</p>
+          <ul class="wins">
+            <li>Cost cut to <b>₹1.5/min or less</b>, down from ₹4.3–12.2</li>
+            <li>First audio in <b>~3.5 s</b> instead of ~15 s</li>
+            <li><b>230 tests</b>, verified end to end on internal calls</li>
+          </ul>
+          <p class="stack">Python · FastAPI · asyncio · WebSockets · Plivo</p>
+        </article>
+
+        <article class="card" data-tags="agents rag">
+          <div class="card-top"><span class="tag">MPCS · 2025–26</span></div>
+          <h3>WebSight AI</h3>
+          <p>Four LangGraph agents that read Google Analytics data and turn it into plain-language insights and recommendations.</p>
+          <p class="stack">LangGraph · FastAPI · Qdrant</p>
+        </article>
+
+        <article class="card" data-tags="agents">
+          <div class="card-top"><span class="tag">MPCS · 2025–26</span></div>
+          <h3>FinSight Agent</h3>
+          <p>A four-agent system that flags anomalies in financial data and explains why each one matters.</p>
+          <p class="stack">LangGraph · Python</p>
+        </article>
+
+        <article class="card" data-tags="agents rag">
+          <div class="card-top"><span class="tag">MPCS · 2025–26</span></div>
+          <h3>TalentFlow AI</h3>
+          <p>Five agents handle the recruiting pipeline, with FAISS semantic search matching candidates to roles.</p>
+          <p class="stack">LangGraph · FAISS · Python</p>
+        </article>
+
+        <article class="card" data-tags="agents">
+          <div class="card-top"><span class="tag">personal</span></div>
+          <h3>Agent CRM</h3>
+          <p>Eight agents run a lightweight CRM over WhatsApp, booking meetings straight into Google Calendar.</p>
+          <p class="stack">Twilio WhatsApp · Google Calendar · SQLite</p>
+        </article>
+
+        <article class="card" data-tags="agents">
+          <div class="card-top"><span class="tag">personal</span></div>
+          <h3>AI Travel Planner</h3>
+          <p>A five-node LangGraph workflow that builds day-by-day trip plans using live weather from Open-Meteo.</p>
+          <p class="stack">LangGraph · Open-Meteo · Streamlit</p>
+        </article>
+
+        <article class="card" data-tags="rag">
+          <div class="card-top"><span class="tag">personal</span></div>
+          <h3>Business Website AI Assistant</h3>
+          <p>An agentic RAG assistant that answers visitor questions from a company's own content.</p>
+          <p class="stack">LangChain · FastAPI · RAG</p>
+        </article>
+
+        <article class="card" data-tags="agents tools">
+          <div class="card-top"><span class="tag">personal · in progress</span></div>
+          <h3>PC Storage Agent</h3>
+          <p>A CLI supervisor agent with query and action workers that inspects and tidies disk storage. Every move or delete waits for human approval.</p>
+          <p class="stack">LangGraph · Groq · Python CLI</p>
+        </article>
+
+        <article class="card" data-tags="tools">
+          <div class="card-top"><span class="tag">personal · in progress</span></div>
+          <h3>clip-history</h3>
+          <p>Windows+V-style clipboard history for Ubuntu, packaged as a .deb so anyone can install it.</p>
+          <p class="stack">Linux · .deb packaging</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="block">
+      <div class="block-head">
+        <p class="label">02 / experience</p>
+        <h2>Where I've worked</h2>
+      </div>
+      <div class="timeline">
+        <div class="row">
+          <span class="when">Jul 2026 — now</span>
+          <div>
+            <h3>AI Developer · NexusLink Services India</h3>
+            <p class="where">Ahmedabad</p>
+            <p>I build production voice AI and LLM backends, owning the work from prototype to a tested, cost-optimised pipeline.</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="when">Nov 2025 — Jun 2026</span>
+          <div>
+            <h3>AI Developer · Micro Pebble Coding Solution</h3>
+            <p class="where">Remote · New Minas, NS, Canada</p>
+            <p>I shipped multi-agent products for analytics, finance and recruiting using LangGraph, FastAPI and vector databases.</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="when">2021 — 2025</span>
+          <div>
+            <h3>B.Tech, CSE (AI/ML) · Indrashil University</h3>
+            <p class="where">Gujarat · CGPA 7.7</p>
+            <p>I published a blockchain security paper in JETIR and led the organising of Xperia 2.0 Fest and the IU Talent Show (300+ participants).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="block">
+      <div class="block-head">
+        <p class="label">03 / skills</p>
+        <h2>Toolbox</h2>
+      </div>
+      <div class="skills">
+        <div><h4>GenAI</h4><p>Agentic AI · Multi-agent systems · RAG · Prompt engineering · Voice AI · NLP · Computer vision</p></div>
+        <div><h4>Frameworks</h4><p>LangChain · LangGraph · Hugging Face · OpenAI · Claude · Gemini · vLLM · n8n</p></div>
+        <div><h4>Backend</h4><p>Python · FastAPI · Flask · asyncio · WebSockets · REST · Streamlit</p></div>
+        <div><h4>Data &amp; ML</h4><p>PyTorch · TensorFlow · Keras · Scikit-learn · Pandas · NumPy</p></div>
+        <div><h4>Storage</h4><p>FAISS · Qdrant · PostgreSQL · MongoDB · MySQL · SQLite</p></div>
+        <div><h4>Ops</h4><p>Docker · Kubernetes · Git · GitHub</p></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="block contact">
+      <p class="label">04 / contact</p>
+      <h2>Let's build something.</h2>
+      <p class="lead">I'm open to AI/ML roles in Bangalore, Mumbai, Pune or Ahmedabad, or anywhere in the world.</p>
+      <div class="links">
+        <a href="mailto:rjshivam1905@gmail.com">rjshivam1905@gmail.com</a>
+        <a href="https://www.linkedin.com/in/shivam-pandey-rj-212183248" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://github.com/19-Shivam-Pandey" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="yr"></span> Shivam Pandey</span>
+    <span>hand-built with HTML, CSS &amp; JS · hosted on GitHub Pages</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
